@@ -1,13 +1,16 @@
-FROM node:latest
+FROM node AS Build
 
-RUN mkdir -p /app/frontend
-WORKDIR /app/frontend
-
-COPY package.json .
-RUN npm install
+RUN mkdir /app
+WORKDIR /app
 
 COPY . .
-RUN npm install -g serve
-CMD serve -s build -l 3000
 
-EXPOSE 3000
+RUN npm install
+RUN npm install -g react-scripts
+RUN npm run build
+
+FROM nginx:alpine
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=Build /app/build /usr/share/nginx/html
+
+EXPOSE 80

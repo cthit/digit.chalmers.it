@@ -96,7 +96,7 @@ export default function Navbar() {
                         <img className={classes.logo} src={logo} alt="logo" />
                     </a>
                     <ul className={classes.ul}>
-                    <li className={classes.li}><a className={classes.a} href="/projects">Projects</a></li>
+                    <li className={classes.li}><a className={classes.a} href="https://findit.chalmers.it/">Projects</a></li>
                     <li className={classes.li}><a className={classes.a} href="/members">Members</a></li>
                     <li className={classes.li}><a className={classes.a} href="https://digit.chalmers.it/wiki/Main_Page">Wiki</a></li>
                     </ul>
