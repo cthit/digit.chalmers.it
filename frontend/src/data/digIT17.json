@@ -1,0 +1,45 @@
+{
+    "year": "17",
+    "members": [
+        {
+            "role": "root",
+            "name": "William 'Gurgy' Levén",
+            "img": "gurgy.png"
+        },
+        {
+            "role": "Kassör",
+            "name": "Fredrik 'Feffe' Åberg",
+            "img": "feffe.png"
+        },
+        {
+            "role": "Serverchef",
+            "name": "Joakim 'Tux' Hulthe",
+            "img": "tux.png"
+        },
+        {
+            "role": "Webbchef",
+            "name": "Anton 'Levis' Levholm",
+            "img": "levis.png"
+        },
+        {
+            "role": "VO",
+            "name": "Karl 'NaN' Wikström",
+            "img": "nan.png"
+        },
+        {
+            "role": "AdWare",
+            "name": "Henry 'XiaoMing' Yang",
+            "img": "xiaoming.png"
+        },
+        {
+            "role": "Cloudlord",
+            "name": "Lovisa 'Lumo' Landgren",
+            "img": "lumo.png"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "Rasmus 'Frodo' Tomasson",
+            "img": "frodo.png"
+        }
+    ]
+}

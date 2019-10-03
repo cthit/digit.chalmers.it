@@ -6,6 +6,7 @@ import DigitGroup from 'component/DigITGroup.js';
 
 import digIT19 from 'data/digIT19.json';
 import digIT18 from 'data/digIT18.json';
+import digIT17 from 'data/digIT17.json';
 
 const useStyles = makeStyles(theme => ({
     groups: {
@@ -26,6 +27,7 @@ export default function Members() {
           <div className={classes.groups}>
             <DigitGroup data={digIT19} />
             <DigitGroup data={digIT18} />
+            <DigitGroup data={digIT17} />
           </div>
         </div>
     );
