@@ -71,7 +71,7 @@ const useStyles = makeStyles({
 				textDecoration: 'none',
 				color: 'white',
 				fontSize: '1.3em',
-				padding: '0 40px',
+				padding: '0 30px',
     },
     logo: {
         marginLeft: '40px',
@@ -98,6 +98,7 @@ export default function Navbar() {
                     <ul className={classes.ul}>
                     <li className={classes.li}><a className={classes.a} href="https://findit.chalmers.it/">Projects</a></li>
                     <li className={classes.li}><a className={classes.a} href="/members">Members</a></li>
+                    <li className={classes.li}><a className={classes.a} href="/pullRequests">Pull&nbsp;Requests</a></li>
                     <li className={classes.li}><a className={classes.a} href="https://digit.chalmers.it/wiki/Main_Page">Wiki</a></li>
                     </ul>
                 </nav>
