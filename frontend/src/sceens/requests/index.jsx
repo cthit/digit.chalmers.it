@@ -8,10 +8,9 @@ const getRepos = () => (
     axios.get(`https://api.github.com/users/cthit/repos?per_page=100`)
 )
 
-const getPulls = (url, set) => {
-    axios.g(url).then(res => {
-        console.log(res.data);
-        set(res.data);
+const getPulls = (url, repos) => {
+    axios.get(url).then(res => {
+        //console.log(res.data);
     })
 }
 
@@ -21,6 +20,9 @@ export const Requests = ({}) =>  {
 
     useEffect(() => {
         getRepos().then((res) => {
+            for (let i = 0; i < res.data.length; i++) {
+                getPulls("https://api.github.com/repos/" + res.data[i].full_name + "/pulls",repos)
+            }
             console.log(res.data);
             setRepos(res.data);
         });
@@ -41,4 +43,4 @@ export const Requests = ({}) =>  {
 
 //<Repo title={"This is a title"} />
 //<button onClick={getStuff}>Button</button>
-//            getPulls(https://api.github.com/repos/cthit/achieveIT/pulls{/number})
+//getPulls(https://api.github.com/repos/cthit/achieveIT/pulls)
