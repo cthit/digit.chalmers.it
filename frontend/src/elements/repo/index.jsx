@@ -1,5 +1,5 @@
 import React from "react";
-//import { DigitDesign, DigitText } from "@cthit/react-digit-components";
+import { DigitDesign } from "@cthit/react-digit-components";
 
 /*export const Repo = ({ title, noReq, repos }) => (
     <DigitDesign.Card width="600px" height="200px">
@@ -18,7 +18,11 @@ import React from "react";
 );*/
 
 export const Repo = ({ title }) => (
-    <div width="600px" height="200px">
-        <h1>Title: </h1> <h3>{title}</h3>
+    <div style={{margin: "30px"}}>
+        <DigitDesign.Card width="600px">
+            <DigitDesign.CardBody>
+                <h3>{title}</h3>
+            </DigitDesign.CardBody>
+        </DigitDesign.Card>
     </div>
 );

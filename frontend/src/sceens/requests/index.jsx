@@ -1,40 +1,44 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import { Repo } from "../../elements/repo";
 import Navbar from "../../elements/navbar";
 
-export class Requests extends Component {
-    constructor(props) {
-        super(props);
+const getRepos = () => (
+    axios.get(`https://api.github.com/users/cthit/repos?per_page=100`)
+)
 
-        this.state = [];
+const getPulls = (url, set) => {
+    axios.g(url).then(res => {
+        console.log(res.data);
+        set(res.data);
+    })
+}
 
-        this.getRepon = this.getRepon.bind(this);
+
+export const Requests = ({}) =>  {
+    const [repos, setRepos] = useState(null);
+
+    useEffect(() => {
+        getRepos().then((res) => {
+            console.log(res.data);
+            setRepos(res.data);
+        });
+    }, []);
+
+    if(repos == null){
+        return null;
     }
 
-    render() {
-        //const listOfRepon = this.state.map(s => <Repo title={s.name} />);
-
-        return (
-            <div>
-                <Navbar />
-                Hello text is back again
-                <button onClick={this.getRepon}>Button</button>
-                <button onClick={console.log(this.state)}>Button2</button>
-                <Repo title={"This is a title"} />
-            </div>
-        );
-    }
-
-    getRepon() {
-        axios
-            .get(`https://api.github.com/users/cthit/repos?per_page=100`)
-            .then(res => {
-                this.setState(res.data);
-            });
-    }
+    return (
+        <div style={{ backgroundColor: "pink"}}>
+            <Navbar />
+            Hello text is back again
+            {repos.map(s => <Repo title={s.full_name}/>)}
+        </div>
+    );
 }
 
 //<Repo title={"This is a title"} />
 //<button onClick={getStuff}>Button</button>
+//            getPulls(https://api.github.com/repos/cthit/achieveIT/pulls{/number})
