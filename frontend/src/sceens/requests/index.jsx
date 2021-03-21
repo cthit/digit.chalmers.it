@@ -6,41 +6,39 @@ import Navbar from "../../elements/navbar";
 
 const getRepos = () => (
     axios.get(`https://api.github.com/users/cthit/repos?per_page=100`)
-)
+);
 
-const getPulls = (url, repos) => {
-    axios.get(url).then(res => {
-        //console.log(res.data);
-    })
-}
-
+const getPulls = (name) => axios.get("https://api.github.com/repos/" + name + "/pulls");
 
 export const Requests = ({}) =>  {
-    const [repos, setRepos] = useState(null);
+    const [pulls, setPulls] = useState(null);
 
     useEffect(() => {
         getRepos().then((res) => {
             for (let i = 0; i < res.data.length; i++) {
-                getPulls("https://api.github.com/repos/" + res.data[i].full_name + "/pulls",repos)
+                getPulls(res.data[i].full_name).then((res2) => {
+                    //setPulls(res2.data);
+                    console.log(res2.data);
+                })
             }
-            console.log(res.data);
-            setRepos(res.data);
         });
     }, []);
 
-    if(repos == null){
-        return null;
+    if(pulls == null){
+        return "null";
     }
+
+    console.log(pulls);
 
     return (
         <div style={{ backgroundColor: "pink"}}>
             <Navbar />
             Hello text is back again
-            {repos.map(s => <Repo title={s.full_name}/>)}
         </div>
     );
-}
+};
 
 //<Repo title={"This is a title"} />
 //<button onClick={getStuff}>Button</button>
+//{pulls.map(s => <Repo title={"hej"}/>)}
 //getPulls(https://api.github.com/repos/cthit/achieveIT/pulls)
