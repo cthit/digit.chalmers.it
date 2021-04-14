@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="/public/css/members.css"/>
+    </head>
+    <body>
+        <a id="back" href="/"> < Back </a>
+        <h1>digIT members</h1>
+        <div id="list">
+            <ul>
+                {% for year in years %}
+                    <li><a href="/members/{{year}}"> 20{{year}} </a></li>
+                {%- endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
+

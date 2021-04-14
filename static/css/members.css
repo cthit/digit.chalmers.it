@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: #09cdda;
+    display: grid;
+    grid-template-columns: 8em 1.5fr 0.5fr;
+    grid-template-rows: 5vh 5vh 6em 1fr 1fr;
+    font-family: Arial, sans-serif
+}
+
+h1 {
+    grid-row: 3;
+    grid-column: 2/4;
+    font-size: 3em;
+}
+
+#back {
+    grid-column: 1;
+    grid-row:2;
+}
+
+#list{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #09cdda;
+    font-size: 2em;
+}

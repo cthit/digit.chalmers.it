@@ -3,38 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>digIT</title>
-        <style>
-            body {
-                background-color: black;
-                color: #09cdda;
-                display: grid;
-                grid-template-columns: 1fr 8fr 1fr;
-                grid-template-rows: 1fr 1vw 0.5fr 10px;
-                place-items: center;
-                font-family: Arial, sans-serif
-            }
-
-            #logo {
-                font-size: 1.5em; 
-                grid-column: 2;
-                grid-row: 1;
-            }
-
-            #links{
-                grid-column: 2;
-                grid-row: 2;
-            }
-
-            #about {
-                grid-column: 2;
-                grid-row:3;
-                width: 50vw;
-            }
-
-            a {
-                color: #09cdda;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="/public/css/index.css"/>
     </head>
     <body>
         <div  id="logo">
@@ -67,6 +36,7 @@
         </div>
         <div id="links">
             <a href="mailto:digit@chalmers.it">digit@chalmers.it</a> | <a href="https://irc.chalmers.it">#digIT on irc.chalmers.it</a> | <a href="https://www.facebook.com/digitchalmers">Facebook</a> |  <a href="https://twitter.com/digITcth">Twitter</a> | <a href="https://github.com/cthit">GitHub</a>
+            <div style="text-align: center;margin-top: 5px;"><a href="/members">Members</a> | <a href="https://findit.chalmers.it">Projects</a> | <a href="https://digit.chalmers.it/wiki">Wiki</a></div>
         </div>
         <div id="about">
             <h2>About us</h2>

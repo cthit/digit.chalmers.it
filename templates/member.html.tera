@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> digIT </title>
+        <link rel="stylesheet" type="text/css" href="/public/css/member.css"/>
+    </head>
+    <body>
+        <a href="/members" id="back"> < Back </a>
+        <h1> digIT year 20{{year}} </h1>
+        <div id="content"/>
+            <div id="member_container"/>
+                {% for member in members %}
+                    <div class="member">
+                        <img src="/public/digIT{{year}}/{{member.img}}"/>
+                        <h3>{{member.name}} </h3>
+                    </div>
+                {%- endfor %}
+            </div>
+            <img src="/public/digIT{{year}}/logo.svg" id="logo">
+        </div>
+    </body>
+</html>
+
