@@ -1,0 +1,316 @@
+[{
+    "year": 13,
+    "members": [
+        {
+            "role": "Dr. Internet",
+            "name": "Max 'iMax' Witt",
+            "img": "imax.png"
+        },
+        {
+            "role": "Kassör",
+            "name": "Christoffer 'Meddan' Medin",
+            "img": "meddan.png"
+        },
+        {
+            "role": "Serverchef",
+            "name": "Emil 'Eda' Edholm",
+            "img": "eda.png"
+        },
+        {
+            "role": "Webbchef",
+            "name": "Pontus 'Malm' Malm",
+            "img": "malm.png"
+        },
+        {
+            "role": "VO",
+            "name": "Johan 'Horv' Andersson",
+            "img": "horv.png"
+        },
+        {
+            "role": "PR-ansvarig",
+            "name": "Anton 'Glaz' Myrholm",
+            "img": "glaz.png"
+        },
+        {
+            "role": "Bry",
+            "name": "Johan 'Ndushi' Lindskogen",
+            "img": "ndushi.png"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "Adrian 'Rekoil' Bjugård",
+            "img": "rekoil.png"
+        }
+    ]
+},
+{
+    "year": 14,
+    "members": [
+        {
+            "role": "Dr. Internet",
+            "name": "Pontus 'Malm' Malm",
+            "img": "malm.png"
+        },
+        {
+            "role": "Cache-ansvarig",
+            "name": "Christoffer 'Meddan' Medin",
+            "img": "meddan.png"
+        },
+        {
+            "role": "Serverchef",
+            "name": "Adrian 'Rekoil' Bjugård",
+            "img": "rekoil.png"
+        },
+        {
+            "role": "Webbchef",
+            "name": "Johan 'Ndushi' Lindskogen",
+            "img": "ndushi.png"
+        },
+        {
+            "role": "Bash-skalman",
+            "name": "Emil 'Eda' Edholm",
+            "img": "eda.png"
+        },
+        {
+            "role": "Logger",
+            "name": "Ivar 'Cannonbait' Josefsson",
+            "img": "cannonbait.png"
+        },
+        {
+            "role": "Pizzachef",
+            "name": "Mattias 'Kerp' Nilsen",
+            "img": "kerp.png"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "André 'Tejp' Samuelsson",
+            "img": "tejp.png"
+        }
+    ]
+},
+{
+    "year": 15,
+    "members": [
+        {
+            "role": "Dr. Internet",
+            "name": "Ivar 'Cannonbait' Josefsson",
+            "img": "cannonbait.png"
+        },
+        {
+            "role": "Cache-ansvarig",
+            "name": "Maxim 'Maxim' Goretskyy",
+            "img": "maxim.png"
+        },
+        {
+            "role": "Serverchef",
+            "name": "Oskar 'Vilddjur' Jedvert",
+            "img": "vilddjur.png"
+        },
+        {
+            "role": "Webbchef",
+            "name": "Alexander 'Hultnér' Hultnér",
+            "img": "hultner.png"
+        },
+        {
+            "role": "OP",
+            "name": "Joel 'Kalior' Gustafsson",
+            "img": "kalior.png"
+        },
+        {
+            "role": "Repost",
+            "name": "Erik 'neon' Norlander",
+            "img": "neon.png"
+        },
+        {
+            "role": "Chillbot",
+            "name": "Kevin 'Kritt' Hoogendijk",
+            "img": "kritt.png"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "Mattias 'Kerp' Nilsen",
+            "img": "kerp.png"
+        }
+    ]
+},
+{
+    "year": 16,
+    "members": [
+        {
+            "role": "Dr. Internet",
+            "name": "Oskar 'Vilddjur' Jedvert",
+            "img": "vilddjur.png"
+        },
+        {
+            "role": "Cachechef",
+            "name": "Robert 'Palm' Palm",
+            "img": "palm.png"
+        },
+        {
+            "role": "Serverchef",
+            "name": "John 'Ares' Andersson",
+            "img": "ares.png"
+        },
+        {
+            "role": "Webbchef",
+            "name": "Jesper 'Jeeppson' Lindström",
+            "img": "jeeppson.png"
+        },
+        {
+            "role": "IO",
+            "name": "Rikard 'Hjort' Hjort",
+            "img": "hjort.png"
+        },
+        {
+            "role": "Pizza Relations",
+            "name": "Gustav 'G' Svensson",
+            "img": "g.png"
+        },
+        {
+            "role": "Ledamot",
+            "name": "Harald 'Lark' Brorsson",
+            "img": "lark.png"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "Jakob 'Holmus' Holmgren",
+            "img": "holmus.png"
+        }
+    ]
+},
+{
+    "year": 17,
+    "members": [
+        {
+            "role": "root",
+            "name": "William 'Gurgy' Levén",
+            "img": "gurgy.png"
+        },
+        {
+            "role": "Kassör",
+            "name": "Fredrik 'Feffe' Åberg",
+            "img": "feffe.png"
+        },
+        {
+            "role": "Serverchef",
+            "name": "Joakim 'Tux' Hulthe",
+            "img": "tux.png"
+        },
+        {
+            "role": "Webbchef",
+            "name": "Anton 'Levis' Levholm",
+            "img": "levis.png"
+        },
+        {
+            "role": "1/0",
+            "name": "Karl 'NaN' Wikström",
+            "img": "nan.png"
+        },
+        {
+            "role": "AdWare",
+            "name": "Henry 'XiaoMing' Yang",
+            "img": "xiaoming.png"
+        },
+        {
+            "role": "Cloudlord",
+            "name": "Lovisa 'Lumo' Landgren",
+            "img": "lumo.png"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "Rasmus 'Frodo' Tomasson",
+            "img": "frodo.png"
+        }
+    ]
+},
+{
+    "year": 18,
+    "members": [
+        {
+            "role": "root",
+            "name": "Theodor 'Portals' Angergård",
+            "img": "portals.png"
+        },
+        {
+            "role": "Cache Chef",
+            "name": "Eric 'LP' Carlsson",
+            "img": "lp.png"
+        },
+        {
+            "role": "Daemon Lord",
+            "name": "Jacob 'NeonSky' Eriksson",
+            "img": "neonsky.png"
+        },
+        {
+            "role": "DevOps",
+            "name": "Gustav 'Gurr' Engsmyre",
+            "img": "gurr.png"
+        },
+        {
+            "role": "Admin",
+            "name": "Vidar 'Vidde' Magnusson",
+            "img": "vidde.png"
+        },
+        {
+            "role": "PribbOPrubb",
+            "name": "Erik 'Jerge' Jergéus",
+            "img": "jerge.png"
+        },
+        {
+            "role": "PribbOPrubb",
+            "name": "Jacob 'π' Pedersen",
+            "img": "pi.png"
+        },
+        {
+            "role": "UX Unicorn",
+            "name": "Elias 'iller' Sundqvist",
+            "img": "iller.png"
+        }
+    ]
+},
+{
+    "year": 19,
+    "members": [
+        {
+            "role": "root",
+            "name": "Carl 'Håll' Holmberg",
+            "img": "håll.png"
+        },
+        {
+            "role": "Cache controller",
+            "name": "Tobias 'Hoidi' Karlsson",
+            "img": "hoidi.png"
+        },
+        {
+            "role": "ServerWhoops",
+            "name": "Arivd 'Earl Grey' Rydberg",
+            "img": "earl_grey.png"
+        },
+        {
+            "role": "DevOops",
+            "name": "Magnus 'Maggan' Wamby",
+            "img": "maggan.png"
+        },
+        {
+            "role": "VR (Vice Ordförande)",
+            "name": "Gustav 'Latte' Lahti",
+            "img": "latte.png"
+        },
+        {
+            "role": ".eventHandler()",
+            "name": "Aaron 'Nox' Sandgren",
+            "img": "nox.png"
+        },
+        {
+            "role": "Meck",
+            "name": "David 'Mölle' Möller",
+            "img": "mölle.png"
+        },
+        {
+            "role": "(RE)Poster",
+            "name": "Stefan 'Fläkt' Chan",
+            "img": "fläkt.png"
+        }
+    ]
+}
+]
