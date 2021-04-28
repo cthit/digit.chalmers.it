@@ -11,7 +11,11 @@
             <div id="member_container"/>
                 {% for member in members %}
                     <div class="member">
-                        <img src="/public/digIT{{year}}/{{member.img}}"/>
+                    <picture>
+                        <source srcset="/public/digIT{{year}}/{{member.img}}.avif" type="image/avif">
+                        <source srcset="/public/digIT{{year}}/{{member.img}}.webp" type="image/webp">
+                        <img src="/public/digIT{{year}}/{{member.img}}.png"/>
+                    </picture>
                         <h3>{{member.name}} </h3>
                     </div>
                 {%- endfor %}

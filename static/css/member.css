@@ -21,7 +21,7 @@ a {
     font-size: 2em;
 }
 
-img {
+picture {
     width: 100px;
     border-width: 5px;
     border-color: black;
@@ -57,7 +57,7 @@ img {
     border-style: solid;
     width: 400px;
     height: 90px;
-    padding: 3px;
+    padding-bottom: 5px;
 }
 
 .member img {
