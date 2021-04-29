@@ -2,12 +2,37 @@
 #[macro_use] extern crate rocket;
 use rocket::State;
 use rocket::response::status::{NotFound};
+use rocket::{Request,Response, Data};
+use rocket::http::Header;
+use rocket::fairing::{Fairing, Info, Kind};
 
 use rocket_contrib::serve::StaticFiles;
 use rocket_contrib::templates::Template;
 use serde::{Serialize, Deserialize};
 use std::collections::HashMap;
 use std::fs;
+
+struct StaticContent {
+}
+
+impl Fairing for StaticContent {
+    fn info(&self) -> Info {
+        Info {
+            name : "Cache Header Setter",
+            kind : Kind::Response
+        }
+    }
+
+    fn on_response(&self, request: &Request, response: &mut Response) {
+        if request.uri().path().starts_with("/public") {
+            response.set_header(Header::new("Cache-Control","max-age=20, public"));
+        }
+        else {
+            response.set_header(Header::new("Cache-Control","max-age=10, public"));
+        }
+    }
+
+}
 
 #[derive(Serialize,Deserialize)]
 struct Year {
@@ -76,6 +101,7 @@ fn main() {
 
     rocket::ignite().mount("/", routes![index, members_overview,member_detail])
         .attach(Template::fairing())
+        .attach(StaticContent{})
         .mount("/public", StaticFiles::from("static"))
         .manage(members)
         .manage(years)
