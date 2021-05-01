@@ -16,7 +16,10 @@
                         <source srcset="/public/digIT{{year}}/{{member.img}}.webp" type="image/webp">
                         <img src="/public/digIT{{year}}/{{member.img}}.png"/>
                     </picture>
-                        <h3>{{member.name}} </h3>
+                        <div class="member-info">
+                            <h3>{{member.name}} </h3>
+                            <h4>{{member.role}} </h4>
+                        </div>
                     </div>
                 {%- endfor %}
             </div>
