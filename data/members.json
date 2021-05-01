@@ -312,5 +312,45 @@
             "img": "fläkt"
         }
     ]
+},
+{
+    "year": 20,
+    "members": [
+        {
+            "role": "root",
+            "name": "William 'Sponken' Albertsson",
+            "img": "sponk"
+        },
+        {
+            "role": "cache",
+            "name": "Li 'nemo' Rönning",
+            "img": "nemo"
+        },
+        {
+            "role": "Vice root",
+            "name": "Pontus 'Sylle' Lindblom",
+            "img": "sylle"
+        },
+        {
+            "role": "People Person",
+            "name": "Joakim 'Yoda' Anderlind",
+            "img": "yoda"
+        },
+        {
+            "role": "Chefserver",
+            "name": "Erik 'Swexbe' Johnsson",
+            "img": "swex"
+        },
+        {
+            "role": "#devops",
+            "name": "Rasmus 'rosen' Rosengren",
+            "img": "rosen"
+        },
+        {
+            "role": "pacman",
+            "name": "Dino 'Santa' Pasalic",
+            "img": "santa"
+        }
+    ]
 }
 ]
