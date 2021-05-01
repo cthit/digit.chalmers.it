@@ -16,8 +16,8 @@ do
         avif_file="${img%$png_suffix}$avif_suffix"
         webp_file="${img%$png_suffix}$webp_suffix"
 
-        convert $img -resize 95 -quality 60% $avif_file
-        convert $img -resize 95 -quality 60% $webp_file
+        convert $img -resize 95x95^ -extent 95x95 -quality 60% $avif_file
+        convert $img -resize 95x95^ -extent 95x95 -quality 60% $webp_file
 
     done
     cd ..
