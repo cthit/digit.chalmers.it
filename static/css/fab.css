@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("/public/image/fab.gif");
+}
+
+marquee {
+    color: #09cdda;
+}
+
+marquee span {
+    margin-left: 20px;
+}
+
+.main {
+    width:1300px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #09cdda;
+}

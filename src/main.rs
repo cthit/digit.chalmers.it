@@ -34,6 +34,16 @@ fn index() -> Template {
 }
 
 #[derive(Serialize,Deserialize)]
+struct FabContext {
+    foo : i8,
+}
+
+#[get("/fab")]
+fn fab() -> Template {
+    Template::render("fab", FabContext{foo:2})
+}
+
+#[derive(Serialize,Deserialize)]
 struct MembersListContext<'a> {
     years : &'a [u8],
 }
@@ -74,7 +84,7 @@ fn main() {
         members.insert(year.year,year);
     }
 
-    rocket::ignite().mount("/", routes![index, members_overview,member_detail])
+    rocket::ignite().mount("/", routes![index, members_overview,member_detail,fab])
         .attach(Template::fairing())
         .mount("/public", StaticFiles::from("static"))
         .manage(members)
