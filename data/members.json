@@ -352,5 +352,45 @@
             "img": "santa"
         }
     ]
+},
+{
+    "year": 21,
+    "members": [
+        {
+            "role": "root",
+            "name": "Ida 'Ide' Dahl",
+            "img": "temp"
+        },
+        {
+            "role": "ka$$chef",
+            "name": "Anton 'HOM BRE' Ekström",
+            "img": "temp"
+        },
+        {
+            "role": "Vice root",
+            "name": "Linnea 'tant' Johansson",
+            "img": "temp"
+        },
+        {
+            "role": "PR master",
+            "name": "Mårten 'Q' Åsberg",
+            "img": "temp"
+        },
+        {
+            "role": "PACMAN",
+            "name": "Love 'snek' Lindqvist",
+            "img": "temp"
+        },
+        {
+            "role": "DEVOPS",
+            "name": "Simon 'simpen' Engström",
+            "img": "temp"
+        },
+        {
+            "role": "Hubben ansvarig",
+            "name": "Simon 'BAMF' Johnson",
+            "img": "temp"
+        }
+    ]
 }
 ]
