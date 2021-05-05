@@ -10,10 +10,32 @@ body {
 
 marquee {
     color: #09cdda;
+    background-color:black;
 }
 
 marquee span {
     margin-left: 10px;
+}
+
+#star1{
+    position: fixed;
+    left:70vw;
+    top:30vh;
+    clip:rect(0px,50px,50px,0px)
+}
+
+#star2{
+    position: fixed;
+    left:30vw;
+    top:70vh;
+    clip:rect(0px,25px,50px,0px)
+}
+
+#globe {
+    position:fixed;
+    left:72vw;
+    top: 14vh;
+    width: 130px;
 }
 
 .main {

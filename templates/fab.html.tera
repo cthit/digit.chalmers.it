@@ -31,6 +31,10 @@
                 <span>Work in progress, please be patient</span>
             </marquee>
             <img src="/public/image/dig-it.webp" usemap="#menumap">
+            <img id="star1" src="/public/image/stars.gif">
+            <img id="star2" src="/public/image/stars.gif">
+            <img id="globe" src="/public/image/globe.gif">
+
             <map name="menumap">
                 <area shape="rect" coords="188,195,494,239" alt="Email" href="mailto:digit.chalmers.it">
                 <area shape="rect" coords="93,196,293,431" alt="Facebook" href="https://www.facebook.com/digitchalmers">
