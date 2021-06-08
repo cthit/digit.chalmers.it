@@ -2,6 +2,8 @@
 <html>
     <head>
             <link rel="stylesheet" type="text/css" href="/public/css/members.css"/>
+            <link rel="icon" href="/public/image/hacked_digit.gif" type="image/gif"/>
+            <title>Members</title>
     </head>
     <body>
         <a id="back" href="/"> < Back </a>

@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>digIT</title>
         <link rel="stylesheet" type="text/css" href="/public/css/index.css"/>
+        <link rel="icon" href="/public/image/hacked_digit.gif" type="image/gif"/>
     </head>
     <body>
         <div  id="logo">

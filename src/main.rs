@@ -2,6 +2,7 @@
 #[macro_use] extern crate rocket;
 use rocket::State;
 use rocket::response::status::{NotFound};
+use rocket::response::NamedFile;
 
 use rocket_contrib::serve::StaticFiles;
 use rocket_contrib::templates::Template;

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> digIT </title>
+        <title> digIT {{year}}</title>
         <link rel="stylesheet" type="text/css" href="/public/css/member.css"/>
+        <link rel="icon" href="/public/image/hacked_digit.gif" type="image/gif"/>
     </head>
     <body>
         <a href="/members" id="back"> < Back </a>
