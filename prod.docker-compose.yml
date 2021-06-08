@@ -1,9 +1,0 @@
-version: "2"
-services:
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    image: digit.chalmers.it
-    ports:
-      - "80:80"
