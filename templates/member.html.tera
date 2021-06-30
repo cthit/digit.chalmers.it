@@ -13,7 +13,11 @@
                 {% for member in members %}
                     <div class="member">
                     {% if member.img == "default" %}
-                        <img src="/img/{{member.name}}/default_avatar.jpg"/>
+                        <picture>
+                            <source srcset="/default_avatar/{{member.role | slugify}}/default.avif" type="image/avif">
+                            <source srcset="/default_avatar/{{member.role | slugify}}/default.webp" type="image/webp">
+                            <img src="/default_avatar/{{member.role | slugify }}/default.jpg"/>
+                        </picture>
                     {% else %}
                         <picture>
                             <source srcset="/public/digIT{{year}}/{{member.img}}.avif" type="image/avif">

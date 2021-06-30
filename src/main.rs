@@ -48,10 +48,22 @@ fn fab() -> Template {
 }
 
 // Ask for name in url to force browser to call this url for each image seperatly
-#[get("/img/<_name>/default_avatar.jpg")]
-async fn random_default_avatar(_name: &str, imgs: &State<Vec<&str>>) -> Redirect {
+#[get("/default_avatar/<_name>/<format>")]
+async fn random_default_avatar(_name: &str, format : &str, imgs: &State<Vec<&str>>) -> Option<Redirect> {
+
     let random_index: usize = rand::random::<usize>() % imgs.len();
-    rocket::response::Redirect::to(format!("/public/image/default/{}", imgs[random_index]))
+
+    if let Some(suffix) = format.split('.').next_back() {
+        match suffix {
+            "avif" => return Some(Redirect::to(format!("/public/image/default/{}.avif", imgs[random_index]))),
+            "webp" => return Some(Redirect::to(format!("/public/image/default/{}.webp", imgs[random_index]))),
+            "jpg" => return Some(Redirect::to(format!("/public/image/default/{}.jpg", imgs[random_index]))), 
+            _ => return None
+        }
+    }
+    None
+
+
 }
 
 #[derive(Serialize, Deserialize)]
@@ -95,12 +107,12 @@ fn rocket() -> _ {
     }
 
     let avatars = vec![
-        "abstract_digit.jpg",
-        "flash_digit.jpg",
-        "persona_digit.jpg",
-        "retro_digit.jpg",
-        "stary_digit.jpg",
-        "stoned_digit.jpg",
+        "abstract_digit",
+        "flash_digit",
+        "persona_digit",
+        "retro_digit",
+        "stary_digit",
+        "stoned_digit",
     ];
 
     rocket::build()
