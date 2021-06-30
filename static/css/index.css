@@ -5,7 +5,9 @@ body {
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr 0.2fr 0.5fr 10px;
     place-items: center;
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
 }
 
 #logo {

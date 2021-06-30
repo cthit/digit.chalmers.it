@@ -7,7 +7,9 @@ body {
     grid-template-rows: 5vh 5vh 6em 1fr 1fr;
     grid-gap: 1em;
 
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
 }
 
 h1 {
