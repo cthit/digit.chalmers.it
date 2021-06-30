@@ -1,11 +1,11 @@
-#![feature(proc_macro_hygiene, decl_macro)]
 #[macro_use] extern crate rocket;
+
 use rocket::State;
 use rocket::response::status::{NotFound};
-use rocket::response::NamedFile;
 
-use rocket_contrib::serve::StaticFiles;
-use rocket_contrib::templates::Template;
+use rocket::fs::FileServer;
+use rocket_dyn_templates::Template;
+
 use serde::{Serialize, Deserialize};
 use std::collections::HashMap;
 use std::fs;
@@ -50,7 +50,7 @@ struct MembersListContext<'a> {
 }
 
 #[get("/members")]
-fn members_overview(years: State<Vec<u8>>) -> Template {
+fn members_overview(years: &State<Vec<u8>>) -> Template {
     let ctx =  MembersListContext{ years : &years };
     Template::render("members", &ctx)
 }
@@ -58,7 +58,7 @@ fn members_overview(years: State<Vec<u8>>) -> Template {
 
 
 #[get("/members/<req_year>")]
-fn member_detail(members: State<HashMap::<u8,Year>>, req_year : u8) -> Result<Template,NotFound<String>> {
+fn member_detail(members: &State<HashMap::<u8,Year>>, req_year : u8) -> Result<Template,NotFound<String>> {
     if let Some(year) = members.get(&req_year) {
         let ctx = year;
         Ok(Template::render("member", &ctx))
@@ -69,7 +69,8 @@ fn member_detail(members: State<HashMap::<u8,Year>>, req_year : u8) -> Result<Te
 
 }
 
-fn main() {
+#[launch]
+fn rocket() -> _ {
 
     let members_json = fs::read_to_string("data/members.json")
         .expect("Could not read in json data");
@@ -85,10 +86,11 @@ fn main() {
         members.insert(year.year,year);
     }
 
-    rocket::ignite().mount("/", routes![index, members_overview,member_detail,fab])
+
+    rocket::build()
+        .mount("/", routes![index, members_overview,member_detail,fab])
         .attach(Template::fairing())
-        .mount("/public", StaticFiles::from("static"))
+        .mount("/public", FileServer::from("static"))
         .manage(members)
         .manage(years)
-        .launch();
 }
