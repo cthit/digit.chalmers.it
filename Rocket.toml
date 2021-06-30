@@ -1,3 +1,7 @@
+[default]
+ident = "UwU? notices client OwO"
+
 [release]
 address = "0.0.0.0"
 port = 9999
+ident = "UwU? notices client OwO"
