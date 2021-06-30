@@ -12,11 +12,15 @@
             <div id="member_container"/>
                 {% for member in members %}
                     <div class="member">
-                    <picture>
-                        <source srcset="/public/digIT{{year}}/{{member.img}}.avif" type="image/avif">
-                        <source srcset="/public/digIT{{year}}/{{member.img}}.webp" type="image/webp">
-                        <img src="/public/digIT{{year}}/{{member.img}}.png"/>
-                    </picture>
+                    {% if member.img == "default" %}
+                        <img src="/img/{{member.name}}/default_avatar.jpg"/>
+                    {% else %}
+                        <picture>
+                            <source srcset="/public/digIT{{year}}/{{member.img}}.avif" type="image/avif">
+                            <source srcset="/public/digIT{{year}}/{{member.img}}.webp" type="image/webp">
+                            <img src="/public/digIT{{year}}/{{member.img}}.png"/>
+                        </picture>
+                    {% endif %}
                         <div class="member-info">
                             <h3>{{member.name}} </h3>
                             <h4>{{member.role}} </h4>

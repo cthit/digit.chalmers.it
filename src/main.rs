@@ -2,12 +2,14 @@
 
 use rocket::State;
 use rocket::response::status::{NotFound};
+use rocket::response::Redirect;
 
 use rocket::fs::FileServer;
 use rocket_dyn_templates::Template;
 
 use serde::{Serialize, Deserialize};
 use std::collections::HashMap;
+
 use std::fs;
 
 #[derive(Serialize,Deserialize)]
@@ -43,6 +45,13 @@ struct FabContext {
 fn fab() -> Template {
     Template::render("fab", FabContext{foo:2})
 }
+
+// Ask for name in url to force browser to call this url for each image seperatly
+#[get("/img/<_name>/default_avatar.jpg")]
+async fn random_default_avatar(_name: &str,imgs : &State<Vec<&str>>) -> Redirect{
+    let random_index : usize = rand::random::<usize>() % imgs.len();
+    rocket::response::Redirect::to(format!("/public/image/default/{}", imgs[random_index]))
+} 
 
 #[derive(Serialize,Deserialize)]
 struct MembersListContext<'a> {
@@ -86,11 +95,14 @@ fn rocket() -> _ {
         members.insert(year.year,year);
     }
 
+    let avatars = vec!["abstract_digit.jpg","flash_digit.jpg","persona_digit.jpg","retro_digit.jpg","stary_digit.jpg","stoned_digit.jpg"];
+
 
     rocket::build()
-        .mount("/", routes![index, members_overview,member_detail,fab])
+        .mount("/", routes![index, members_overview,member_detail,fab, random_default_avatar])
         .attach(Template::fairing())
         .mount("/public", FileServer::from("static"))
         .manage(members)
         .manage(years)
+        .manage(avatars)
 }

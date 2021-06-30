@@ -4,7 +4,7 @@
         {
             "role": "Dr. Internet",
             "name": "Max 'iMax' Witt",
-            "img": "imax"
+            "img": "default"
         },
         {
             "role": "Kassör",
@@ -19,7 +19,7 @@
         {
             "role": "Webbchef",
             "name": "Pontus 'Malm' Malm",
-            "img": "malm"
+            "img": "default"
         },
         {
             "role": "VO",
@@ -34,12 +34,12 @@
         {
             "role": "Bry",
             "name": "Johan 'Ndushi' Lindskogen",
-            "img": "ndushi"
+            "img": "default"
         },
         {
             "role": "Hubbenansvarig",
             "name": "Adrian 'Rekoil' Bjugård",
-            "img": "rekoil"
+            "img": "default"
         }
     ]
 },
@@ -49,7 +49,7 @@
         {
             "role": "Dr. Internet",
             "name": "Pontus 'Malm' Malm",
-            "img": "malm"
+            "img": "default"
         },
         {
             "role": "Cache-ansvarig",
@@ -59,12 +59,12 @@
         {
             "role": "Serverchef",
             "name": "Adrian 'Rekoil' Bjugård",
-            "img": "rekoil"
+            "img": "default"
         },
         {
             "role": "Webbchef",
             "name": "Johan 'Ndushi' Lindskogen",
-            "img": "ndushi"
+            "img": "default"
         },
         {
             "role": "Bash-skalman",
@@ -74,17 +74,17 @@
         {
             "role": "Logger",
             "name": "Ivar 'Cannonbait' Josefsson",
-            "img": "cannonbait"
+            "img": "default"
         },
         {
             "role": "Pizzachef",
             "name": "Mattias 'Kerp' Nilsen",
-            "img": "kerp"
+            "img": "default"
         },
         {
             "role": "Hubbenansvarig",
             "name": "André 'Tejp' Samuelsson",
-            "img": "tejp"
+            "img": "default"
         }
     ]
 },
@@ -94,12 +94,12 @@
         {
             "role": "Dr. Internet",
             "name": "Ivar 'Cannonbait' Josefsson",
-            "img": "cannonbait"
+            "img": "default"
         },
         {
             "role": "Cache-ansvarig",
             "name": "Maxim 'Maxim' Goretskyy",
-            "img": "maxim"
+            "img": "default"
         },
         {
             "role": "Serverchef",
@@ -114,12 +114,12 @@
         {
             "role": "OP",
             "name": "Joel 'Kalior' Gustafsson",
-            "img": "kalior"
+            "img": "default"
         },
         {
             "role": "Repost",
             "name": "Erik 'neon' Norlander",
-            "img": "neon"
+            "img": "default"
         },
         {
             "role": "Chillbot",
@@ -129,7 +129,7 @@
         {
             "role": "Hubbenansvarig",
             "name": "Mattias 'Kerp' Nilsen",
-            "img": "kerp"
+            "img": "default"
         }
     ]
 },
@@ -149,12 +149,12 @@
         {
             "role": "Serverchef",
             "name": "John 'Ares' Andersson",
-            "img": "ares"
+            "img": "default"
         },
         {
             "role": "Webbchef",
             "name": "Jesper 'Jeeppson' Lindström",
-            "img": "jeeppson"
+            "img": "default"
         },
         {
             "role": "IO",
@@ -164,17 +164,17 @@
         {
             "role": "Pizza Relations",
             "name": "Gustav 'G' Svensson",
-            "img": "g"
+            "img": "default"
         },
         {
             "role": "Ledamot",
             "name": "Harald 'Lark' Brorsson",
-            "img": "lark"
+            "img": "default"
         },
         {
             "role": "Hubbenansvarig",
             "name": "Jakob 'Holmus' Holmgren",
-            "img": "holmus"
+            "img": "default"
         }
     ]
 },
@@ -204,7 +204,7 @@
         {
             "role": "1/0",
             "name": "Karl 'NaN' Wikström",
-            "img": "nan"
+            "img": "default"
         },
         {
             "role": "AdWare",
@@ -229,7 +229,7 @@
         {
             "role": "root",
             "name": "Theodor 'Portals' Angergård",
-            "img": "portals"
+            "img": "default"
         },
         {
             "role": "Cache Chef",
@@ -244,7 +244,7 @@
         {
             "role": "DevOps",
             "name": "Gustav 'Gurr' Engsmyre",
-            "img": "gurr"
+            "img": "default"
         },
         {
             "role": "Admin",
@@ -259,7 +259,7 @@
         {
             "role": "PribbOPrubb",
             "name": "Jacob 'π' Pedersen",
-            "img": "pi"
+            "img": "default"
         },
         {
             "role": "UX Unicorn",
@@ -284,7 +284,7 @@
         {
             "role": "ServerWhoops",
             "name": "Arivd 'Earl Grey' Rydberg",
-            "img": "earl_grey"
+            "img": "default"
         },
         {
             "role": "DevOops",
@@ -299,7 +299,7 @@
         {
             "role": ".eventHandler()",
             "name": "Aaron 'Nox' Sandgren",
-            "img": "nox"
+            "img": "default"
         },
         {
             "role": "Meck",
@@ -359,37 +359,37 @@
         {
             "role": "root",
             "name": "Ida 'Ide' Dahl",
-            "img": "temp"
+            "img": "default"
         },
         {
             "role": "ka$$chef",
             "name": "Anton 'HOM BRE' Ekström",
-            "img": "temp"
+            "img": "default"
         },
         {
             "role": "Vice root",
             "name": "Linnea 'tant' Johansson",
-            "img": "temp"
+            "img": "default"
         },
         {
             "role": "PR master",
             "name": "Mårten 'Q' Åsberg",
-            "img": "temp"
+            "img": "default"
         },
         {
             "role": "PACMAN",
             "name": "Love 'snek' Lindqvist",
-            "img": "temp"
+            "img": "default"
         },
         {
             "role": "DEVOPS",
             "name": "Simon 'simpen' Engström",
-            "img": "temp"
+            "img": "default"
         },
         {
             "role": "Hubbenansvarig",
             "name": "Simon 'BAMF' Johnson",
-            "img": "temp"
+            "img": "default"
         }
     ]
 }
