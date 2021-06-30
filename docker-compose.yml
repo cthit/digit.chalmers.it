@@ -3,7 +3,7 @@ services:
   rust-server:
     build: .
     ports:
-      - "8000:8000"
+      - "9999:9999"
 
   nginx:
     image: nginx:1.19-alpine
