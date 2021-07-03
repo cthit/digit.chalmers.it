@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>digIT</title>
+        <link rel="stylesheet" type="text/css" href="/public/css/fab.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <marquee direction="left" behaviour="slide">
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+                <span>Work in progress, please be patient</span>
+            </marquee>
+            <img src="/public/image/dig-it.webp" usemap="#menumap">
+            <img id="star1" src="/public/image/stars.gif">
+            <img id="star2" src="/public/image/stars.gif">
+            <img id="globe" src="/public/image/globe.gif">
+
+            <map name="menumap">
+                <area shape="rect" coords="188,195,494,239" alt="Email" href="mailto:digit.chalmers.it">
+                <area shape="rect" coords="93,196,293,431" alt="Facebook" href="https://www.facebook.com/digitchalmers">
+                <area shape="rect" coords="131,581,312,623" alt="Tjänster" href="https://findit.chalmers.it">
+                <area shape="rect" coords="850,200,1025,242" alt="Twitter" href="https://twitter.com/digITcth">
+                <area shape="rect" coords="980,399,1120,435" alt="GitHub" href="https://github.com/cthit">
+                <area shape="rect" coords="940,585,1101,635" alt="Members" href="/members">
+            </map>
+                <marquee direction="left" behaviour="slide">
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                    <span>ASPA DIGIT</span>
+                </marquee>
+
+    </body>
+</html>

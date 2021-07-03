@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> digIT {{year}}</title>
+        <link rel="stylesheet" type="text/css" href="/public/css/member.css"/>
+        <link rel="icon" href="/public/image/hacked_digit.gif" type="image/gif"/>
+    </head>
+    <body>
+        <a href="/members" id="back"> < Back </a>
+        <h1> digIT year 20{{year}} </h1>
+        <div id="content"/>
+            <div id="member_container"/>
+                {% for member in members %}
+                    <div class="member">
+                    {% if member.img == "default" %}
+                        <picture>
+                            <source srcset="/default_avatar/{{member.role | slugify}}/default.avif" type="image/avif">
+                            <source srcset="/default_avatar/{{member.role | slugify}}/default.webp" type="image/webp">
+                            <img src="/default_avatar/{{member.role | slugify }}/default.jpg"/>
+                        </picture>
+                    {% else %}
+                        <picture>
+                            <source srcset="/public/digIT{{year}}/{{member.img}}.avif" type="image/avif">
+                            <source srcset="/public/digIT{{year}}/{{member.img}}.webp" type="image/webp">
+                            <img src="/public/digIT{{year}}/{{member.img}}.png"/>
+                        </picture>
+                    {% endif %}
+                        <div class="member-info">
+                            <h3>{{member.name}} </h3>
+                            <h4>{{member.role}} </h4>
+                        </div>
+                    </div>
+                {%- endfor %}
+            </div>
+            <img src="/public/digIT{{year}}/logo.svg" id="logo">
+        </div>
+    </body>
+</html>
+

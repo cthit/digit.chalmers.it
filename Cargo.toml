@@ -1,0 +1,20 @@
+[package]
+name = "digit2021"
+version = "0.1.0"
+authors = ["Joakim yoda Anderlind"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.5.0-rc.1"
+serde_json = "1.0"
+rand = "0.4.6"
+
+[dependencies.serde]
+version = "1.0.125"
+features = ["serde_derive"]
+
+[dependencies.rocket_dyn_templates]
+version = "0.1.0-rc.1"
+features = ["tera"]
