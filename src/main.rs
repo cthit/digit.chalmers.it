@@ -1,6 +1,9 @@
 #[macro_use]
 extern crate rocket;
 
+use rocket::Request;
+use rocket::request::Outcome;
+use rocket::request::FromRequest;
 use rocket::response::status::NotFound;
 use rocket::response::Redirect;
 use rocket::State;
@@ -12,6 +15,29 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 
 use std::fs;
+
+struct TerminalOutput(bool);
+
+#[rocket::async_trait]
+impl<'r> FromRequest<'r> for TerminalOutput {
+    type Error = ();
+
+    async fn from_request(request: &'r Request<'_>) -> Outcome<Self, Self::Error> {
+        if let Some(user_agent) = request.headers().get_one("User-Agent") {
+            if user_agent.contains("curl") {
+                return Outcome::Success(TerminalOutput(true));
+            }
+        }
+
+        if let Some(media_type) = request.headers().get_one("Accept") {
+            if media_type.contains("text/plain") {
+                return Outcome::Success(TerminalOutput(true));
+            }
+        }
+
+        Outcome::Success(TerminalOutput(false))
+    }
+}
 
 #[derive(Serialize, Deserialize)]
 struct Year {
@@ -32,9 +58,14 @@ struct IndexContext {
 }
 
 #[get("/")]
-fn index() -> Template {
+fn index(terminal_output: TerminalOutput) -> Template {
     let context = IndexContext { date: 2021 };
-    Template::render("index", &context)
+    if terminal_output.0 {
+        Template::render("index.ansi", &context)
+    }
+    else {
+        Template::render("index", &context)
+    }
 }
 
 #[derive(Serialize, Deserialize)]
