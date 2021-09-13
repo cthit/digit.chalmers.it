@@ -30,7 +30,7 @@ impl<'r> FromRequest<'r> for TerminalOutput {
         }
 
         if let Some(media_type) = request.headers().get_one("Accept") {
-            if media_type.contains("text/plain") {
+            if media_type.contains("text/plain") && !media_type.contains("text/html") {
                 return Outcome::Success(TerminalOutput(true));
             }
         }
