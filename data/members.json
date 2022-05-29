@@ -392,5 +392,45 @@
             "img": "default"
         }
     ]
+},
+{
+    "year": 22,
+    "members": [
+        {
+            "role": "root",
+            "name": "Axel 'Kurre' Larsson",
+            "img": "default"
+        },
+        {
+            "role": "cache",
+            "name": "Jacob 'Drake' Bengtsson",
+            "img": "default"
+        },
+        {
+            "role": "sudo",
+            "name": "Hampus 'Blip' Rhedin Stam",
+            "img": "default"
+        },
+        {
+            "role": "Pull Request",
+            "name": "Dadi 'KLAKINN' Andrason",
+            "img": "default"
+        },
+        {
+            "role": "Server(o)ansvarig",
+            "name": "Oscar 'saxen' Palm",
+            "img": "default"
+        },
+        {
+            "role": "DEVOOPS",
+            "name": "Felix 'Sonic' Bjerhem Aronsson",
+            "img": "default"
+        },
+        {
+            "role": "Hubbenansvarig",
+            "name": "Max 'Krysset' Hagman",
+            "img": "default"
+        }
+    ]
 }
 ]
