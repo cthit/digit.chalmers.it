@@ -419,17 +419,17 @@
         {
             "role": "Server(o)ansvarig",
             "name": "Oscar 'saxen' Palm",
-            "img": "default"
+            "img": "saxen"
         },
         {
             "role": "DEVOOPS",
             "name": "Felix 'Sonic' Bjerhem Aronsson",
-            "img": "default"
+            "img": "sonic"
         },
         {
             "role": "Hubbenansvarig",
             "name": "Max 'Krysset' Hagman",
-            "img": "default"
+            "img": "krysset"
         }
     ]
 }
