@@ -432,5 +432,50 @@
             "img": "krysset"
         }
     ]
+},
+{
+    "year": 23,
+    "members": [
+        {
+            "role": "root",
+            "name": "Oscar 'Space' Eriksson",
+            "img": "default"
+        },
+        {
+            "role": "cache",
+            "name": "Gustaf 'Goose' Asplund",
+            "img": "default"
+        },
+        {
+            "role": "sudo",
+            "name": "Lukas 'Låke' Åkefeldt",
+            "img": "default"
+        },
+        {
+            "role": "Pull Request",
+            "name": "Atosa 'Katt' Daneshvar",
+            "img": "default"
+        },
+        {
+            "role": "Serveroansvarig",
+            "name": "Elias 'Nexus' Hallberg",
+            "img": "default"
+        },
+        {
+            "role": "devOops",
+            "name": "Lisa 'Legolas' Qwinth",
+            "img": "default"
+        },
+        {
+            "role": "hubb_lord",
+            "name": "Viktoria 'Ping' Magnusson",
+            "img": "default"
+        },
+        {
+            "role": "UI/UX",
+            "name": "Zoé 'Zorro' Opdendries",
+            "img": "default"
+        }
+    ]
 }
 ]
