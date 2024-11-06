@@ -478,5 +478,35 @@
         "img": "default"
       }
     ]
-  }
+  },
+  {
+    "year": 2024,
+    "members": [
+        {
+            "role": "root",
+            "name": "Viktor 'Syntax' Eriksson",
+            "img": "default"
+        },
+        {
+            "role": "cache",
+            "name": "Wilmer 'Wolt' Greppe",
+            "img": "default"
+        },
+        {
+            "role": "sudo",
+            "name": "Simon 'Casino' Westlin Green",
+            "img": "default"
+        },
+        {
+            "role": "Serveroansvarig",
+            "name": "Rasmus 'Chrono' Hulthe",
+            "img": "default"
+        },
+        {
+            "role": "hubb_lord",
+            "name": "Luqas 'Reach' Lundahl",
+            "img": "default"
+        }
+    ]
+}
 ]
