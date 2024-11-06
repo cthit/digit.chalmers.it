@@ -1,7 +1,7 @@
 ###################
 ### BUILD STAGE ###
 ###################
-FROM rust:1.53 as build
+FROM rust:1.82 as build
 WORKDIR /usr/src/
 
 # Install build-target for static linking
@@ -18,7 +18,6 @@ COPY src ./src
 
 # Compile the final binary
 RUN cargo build --release --target x86_64-unknown-linux-musl
-RUN strip target/x86_64-unknown-linux-musl/release/digit2021
 
 ########################
 ### PRODUCTION STAGE ###
