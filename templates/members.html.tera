@@ -11,7 +11,7 @@
         <div id="list">
             <ul>
                 {% for year in years %}
-                    <li><a href="/members/{{year}}"> 20{{year}} </a></li>
+                    <li><a href="/members/{{year}}"> {{year}} </a></li>
                 {%- endfor %}
             </ul>
         </div>
