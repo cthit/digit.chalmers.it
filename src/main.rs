@@ -1,11 +1,11 @@
 #[macro_use]
 extern crate rocket;
 
-use rocket::Request;
-use rocket::request::Outcome;
 use rocket::request::FromRequest;
+use rocket::request::Outcome;
 use rocket::response::status::NotFound;
 use rocket::response::Redirect;
+use rocket::Request;
 use rocket::State;
 
 use rocket::fs::FileServer;
@@ -41,7 +41,7 @@ impl<'r> FromRequest<'r> for TerminalOutput {
 
 #[derive(Serialize, Deserialize)]
 struct Year {
-    year: u8,
+    year: u32,
     members: Vec<Members>,
 }
 
@@ -62,8 +62,7 @@ fn index(terminal_output: TerminalOutput) -> Template {
     let context = IndexContext { date: 2021 };
     if terminal_output.0 {
         Template::render("index.ansi", &context)
-    }
-    else {
+    } else {
         Template::render("index", &context)
     }
 }
@@ -80,38 +79,54 @@ fn fab() -> Template {
 
 // Ask for name in url to force browser to call this url for each image seperatly
 #[get("/default_avatar/<_name>/<format>")]
-async fn random_default_avatar(_name: &str, format : &str, imgs: &State<Vec<&str>>) -> Option<Redirect> {
-
+async fn random_default_avatar(
+    _name: &str,
+    format: &str,
+    imgs: &State<Vec<&str>>,
+) -> Option<Redirect> {
     let random_index: usize = rand::random::<usize>() % imgs.len();
 
     if let Some(suffix) = format.split('.').next_back() {
         match suffix {
-            "avif" => return Some(Redirect::to(format!("/public/image/default/{}.avif", imgs[random_index]))),
-            "webp" => return Some(Redirect::to(format!("/public/image/default/{}.webp", imgs[random_index]))),
-            "jpg" => return Some(Redirect::to(format!("/public/image/default/{}.jpg", imgs[random_index]))), 
-            _ => return None
+            "avif" => {
+                return Some(Redirect::to(format!(
+                    "/public/image/default/{}.avif",
+                    imgs[random_index]
+                )))
+            }
+            "webp" => {
+                return Some(Redirect::to(format!(
+                    "/public/image/default/{}.webp",
+                    imgs[random_index]
+                )))
+            }
+            "jpg" => {
+                return Some(Redirect::to(format!(
+                    "/public/image/default/{}.jpg",
+                    imgs[random_index]
+                )))
+            }
+            _ => return None,
         }
     }
     None
-
-
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize)]
 struct MembersListContext<'a> {
-    years: &'a [u8],
+    years: &'a [u32],
 }
 
 #[get("/members")]
-fn members_overview(years: &State<Vec<u8>>) -> Template {
+fn members_overview(years: &State<Vec<u32>>) -> Template {
     let ctx = MembersListContext { years: &years };
     Template::render("members", &ctx)
 }
 
 #[get("/members/<req_year>")]
 fn member_detail(
-    members: &State<HashMap<u8, Year>>,
-    req_year: u8,
+    members: &State<HashMap<u32, Year>>,
+    req_year: u32,
 ) -> Result<Template, NotFound<String>> {
     if let Some(year) = members.get(&req_year) {
         let ctx = year;
@@ -129,8 +144,8 @@ fn rocket() -> _ {
     let mut members_data: Vec<Year> =
         serde_json::from_str(&members_json).expect("Failed to parse json");
 
-    let mut members = HashMap::<u8, Year>::new();
-    let mut years = Vec::<u8>::new();
+    let mut members = HashMap::<u32, Year>::new();
+    let mut years = Vec::<u32>::new();
 
     for year in members_data.drain(0..) {
         years.insert(0, year.year);
