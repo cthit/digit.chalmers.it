@@ -1,15 +1,3 @@
-###########################
-### STRIP-VERSION STAGE ###
-###########################
-FROM rust:1.53 as strip-version
-
-# Strip version from Cargo.*
-# This avoids cache invalidations (ergo rebuilding all deps) when bumping the version number
-RUN cargo install strip_cargo_version
-WORKDIR /usr/src/digit-web
-COPY Cargo.toml Cargo.lock ./
-RUN strip_cargo_version
-
 ###################
 ### BUILD STAGE ###
 ###################
@@ -22,7 +10,6 @@ RUN rustup target add x86_64-unknown-linux-musl
 # Create a dummy binary for pre-compiling dependencies (for caching)
 RUN cargo new --bin digit-web
 WORKDIR /usr/src/digit-web
-COPY --from=strip-version /usr/src/digit-web/Cargo.* ./
 RUN cargo build --release --target x86_64-unknown-linux-musl
 
 # Copy the actual source files
