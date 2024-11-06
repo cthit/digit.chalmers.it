@@ -1,14 +1,6 @@
 version: "3.9"  # optional since v1.27.0
 services:
-  rust-server:
+  digit-web:
     build: .
     ports:
       - "9999:9999"
-
-  nginx:
-    image: nginx:1.19-alpine
-    ports:
-        - "666:666"
-    volumes:
-        - ./nginx.conf:/etc/nginx/nginx.conf:ro
-        - ./static:/var/www/public

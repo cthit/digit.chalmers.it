@@ -54,9 +54,12 @@ To deploy the project, or test it for production run
   docker-compose up --build
 ```
 
+Note that the ip displayed when running is incorrect, the correct ip can be found by inspecting IPv4Address after running the following code
+```bash
+  docker network inspect digitchalmersit_default
+```
   
 ## Support
 
 For support, or if the project does not build, reach us at digit@chalmers.it
 
-  
