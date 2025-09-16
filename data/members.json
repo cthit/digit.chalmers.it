@@ -482,31 +482,66 @@
   {
     "year": 2024,
     "members": [
-        {
-            "role": "root",
-            "name": "Viktor 'Syntax' Eriksson",
-            "img": "default"
-        },
-        {
-            "role": "cache",
-            "name": "Wilmer 'Wolt' Greppe",
-            "img": "default"
-        },
-        {
-            "role": "sudo",
-            "name": "Simon 'Casino' Westlin Green",
-            "img": "default"
-        },
-        {
-            "role": "Serveroansvarig",
-            "name": "Rasmus 'Chrono' Hulthe",
-            "img": "default"
-        },
-        {
-            "role": "hubb_lord",
-            "name": "Luqas 'Reach' Lundahl",
-            "img": "default"
-        }
+      {
+        "role": "root",
+        "name": "Viktor 'Syntax' Eriksson",
+        "img": "default"
+      },
+      {
+        "role": "cache",
+        "name": "Wilmer 'Wolt' Greppe",
+        "img": "default"
+      },
+      {
+        "role": "sudo",
+        "name": "Simon 'Casino' Westlin Green",
+        "img": "default"
+      },
+      {
+        "role": "Serveroansvarig",
+        "name": "Rasmus 'Chrono' Hulthe",
+        "img": "default"
+      },
+      {
+        "role": "hubb_lord",
+        "name": "Luqas 'Reach' Lundahl",
+        "img": "default"
+      }
     ]
-}
+  },
+  {
+    "year": 2024,
+    "members": [
+      {
+        "role": "root",
+        "name": "Hampus 'Hero' Siik",
+        "img": "default"
+      },
+      {
+        "role": "cache",
+        "name": "Erik 'Fogel' Fogelstrand",
+        "img": "default"
+      },
+      {
+        "role": "sudo rm -rf server",
+        "name": "Alfred 'Napster' Berglöf",
+        "img": "default"
+      },
+      {
+        "role": "dev_oops",
+        "name": "William 'Merlin' Ekerstedt",
+        "img": "default"
+      },
+      {
+        "role": "PR/hubb_l0rd",
+        "name": "Alex 'Tang' Tang",
+        "img": "default"
+      },
+      {
+        "role": "UX Unicorn",
+        "name": "Susanne 'Meep' On Huang",
+        "img": "default"
+      }
+    ]
+  }
 ]
