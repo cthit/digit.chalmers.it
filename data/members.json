@@ -515,27 +515,27 @@
       {
         "role": "root",
         "name": "Hampus 'Hero' Siik",
-        "img": "default"
+        "img": "hero"
       },
       {
         "role": "cache",
         "name": "Erik 'Fogel' Fogelstrand",
-        "img": "default"
+        "img": "fogel"
       },
       {
         "role": "sudo rm -rf server",
         "name": "Alfred 'Napster' Berglöf",
-        "img": "default"
+        "img": "napster"
       },
       {
         "role": "dev_oops",
         "name": "William 'Merlin' Ekerstedt",
-        "img": "default"
+        "img": "merlin"
       },
       {
         "role": "PR/hubb_l0rd",
         "name": "Alex 'Tang' Tang",
-        "img": "default"
+        "img": "tang"
       },
       {
         "role": "UX Unicorn",
